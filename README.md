@@ -117,6 +117,25 @@ No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y a
 
 <br>
 
+## Código abierto
+
+Lo que resolvemos para nuestros proyectos y le sirve a cualquier dev paraguayo, lo publicamos.
+
+<table>
+<tr>
+<td colspan="2" valign="top">
+
+### 📇 [ruc-paraguay](https://github.com/FindTek/ruc-paraguay)
+Validación del **RUC paraguayo** en el navegador o en el servidor, sin llamar a la DNIT. Cero dependencias. Verificado contra **1.995.012 RUC reales** del padrón completo: ninguno vigente falla.
+
+`TypeScript` · `MIT` · `0 dependencias`
+
+</td>
+</tr>
+</table>
+
+<br>
+
 ## Con qué construimos
 
 <div align="center">
