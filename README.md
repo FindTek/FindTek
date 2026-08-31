@@ -53,6 +53,17 @@
 
 ## En qué estamos trabajando
 
+<div align="center">
+
+<img src="assets/mockup-gastro.png" width="49%" alt="FindTek Gastro — pantalla de venta con facturación SIFEN">
+<img src="assets/mockup-gestion.png" width="49%" alt="FindTek Gestión — panel de sprint, horas y finanzas">
+
+<sub>Vistas de diseño de <b>FindTek Gastro</b> y <b>FindTek Gestión</b></sub>
+
+</div>
+
+<br>
+
 <table>
 <tr>
 <td width="50%" valign="top">
