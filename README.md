@@ -2,20 +2,26 @@
 
 <img src="assets/banner.png" alt="FindTek — Tecnología que trabaja para tu negocio" width="760">
 
-<br><br>
+<br>
 
 **Sistemas a medida, automatizaciones y páginas web para pymes paraguayas.**
 
-No adaptamos tu empresa a una herramienta.<br>Construimos la herramienta alrededor de tu empresa.
+<a href="https://www.findtek.com.py/servicios/sistemas-a-medida/">Sistemas a medida</a>
+<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+<a href="https://www.findtek.com.py/servicios/automatizaciones/">Automatizaciones</a>
+<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+<a href="https://www.findtek.com.py/servicios/paginas-web/">Páginas web</a>
+<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+<a href="https://www.findtek.com.py/servicios/ecommerce/">E-commerce</a>
 
-<br>
+<hr>
 
-[![Sitio web](https://img.shields.io/badge/findtek.com.py-E8645C?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.findtek.com.py)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/595985244443)
-[![Instagram](https://img.shields.io/badge/@findtekpy-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/findtekpy)
-[![Email](https://img.shields.io/badge/info@findtek.com.py-71332F?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:info@findtek.com.py)
+<a href="https://www.findtek.com.py"><img src="https://img.shields.io/badge/findtek.com.py-E8645C?style=flat-square&logo=googlechrome&logoColor=white" alt="Sitio web"></a>
+<a href="https://wa.me/595985244443"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
+<a href="https://instagram.com/findtekpy"><img src="https://img.shields.io/badge/@findtekpy-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="mailto:info@findtek.com.py"><img src="https://img.shields.io/badge/info@findtek.com.py-71332F?style=flat-square&logo=maildotru&logoColor=white" alt="Email"></a>
 
-📍 San Lorenzo · Gran Asunción · Paraguay 🇵🇾
+<sub>📍 San Lorenzo · Gran Asunción · Paraguay 🇵🇾</sub>
 
 </div>
 
@@ -25,19 +31,22 @@ No adaptamos tu empresa a una herramienta.<br>Construimos la herramienta alreded
 
 | | Servicio | Para qué sirve |
 |:--:|---|---|
-| 🖥️ | **Sistemas a medida** | El software se adapta a cómo ya trabajás, no al revés |
-| 🤖 | **Automatizaciones** | Sacamos de encima el trabajo repetitivo: reportes, cargas, mensajería |
-| 🌐 | **Páginas web** | Rápidas, indexables y con contenido que editás vos |
-| 🛒 | **E-commerce** | Catálogo, pagos y stock conectados a tu operación real |
+| 🖥️ | **[Sistemas a medida](https://www.findtek.com.py/servicios/sistemas-a-medida/)** | El software se adapta a cómo ya trabajás, no al revés |
+| 🤖 | **[Automatizaciones](https://www.findtek.com.py/servicios/automatizaciones/)** | Sacamos de encima el trabajo repetitivo: reportes, cargas, mensajería |
+| 🌐 | **[Páginas web](https://www.findtek.com.py/servicios/paginas-web/)** | Rápidas, indexables y con contenido que editás vos |
+| 🛒 | **[E-commerce](https://www.findtek.com.py/servicios/ecommerce/)** | Catálogo, pagos y stock conectados a tu operación real |
 
 <br>
 
 ## Cómo trabajamos
 
+> Analizamos cómo trabaja tu empresa, identificamos dónde se pierde tiempo o dinero,
+> y diseñamos junto a vos la herramienta que lo resuelve.
+
 ```
-1 · Entendemos       Miramos cómo opera tu negocio hoy, antes de escribir una línea de código
-2 · Arrancás chico   Salimos con lo mínimo que ya te ahorra tiempo, no con el sistema completo
-3 · Escalás          Cuando ves el resultado, sumamos el resto — a tu ritmo
+1 · Analizamos     Miramos tu operación real antes de escribir una línea de código
+2 · Arrancás chico  Salimos con lo mínimo que ya te ahorra tiempo, no con el sistema entero
+3 · Escalás         Cuando ves el resultado, sumamos el resto — a tu ritmo
 ```
 
 <br>
@@ -126,7 +135,11 @@ No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y a
 
 Contanos cómo trabajás hoy y te decimos qué se puede automatizar. Sin costo.
 
-[![Escribinos por WhatsApp](https://img.shields.io/badge/Escribinos_por_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/595985244443)
+[<kbd> <br> 💬 &nbsp; Escribinos por WhatsApp &nbsp; ➜ <br> </kbd>](https://wa.me/595985244443)
+&nbsp;&nbsp;
+[<kbd> <br> 🌐 &nbsp; Ver el sitio &nbsp; ➜ <br> </kbd>](https://www.findtek.com.py)
+
+<br><br>
 
 <sub>FindTek · San Lorenzo, Paraguay · <a href="https://www.findtek.com.py">findtek.com.py</a></sub>
 
