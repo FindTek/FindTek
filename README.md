@@ -56,28 +56,10 @@ Gestión gastronómica multi-tenant para Paraguay, con **facturación electróni
 </td>
 <td width="50%" valign="top">
 
-### 🍺 BierControl
-Operación completa de una **distribuidora de bebidas**: alquiler de chopperas, stock de barriles y CO₂, agenda de eventos, caja diaria y cuentas por cobrar — multi-sucursal.
-
-`Django` · `DRF` · `React` · `Postgres`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 ### 📣 Disparador multiplataforma
 Un asset y un copy, una sola pantalla: el sistema deriva la variante correcta para Instagram, TikTok, YouTube Shorts y LinkedIn.
 
 `Rust` · `Axum` · `FFmpeg` · `Next.js`
-
-</td>
-<td width="50%" valign="top">
-
-### 🎯 Prospección local
-Negocios paraguayos sin presencia web, segmentados por ciudad y rubro, con seguimiento del embudo y cuota diaria de contactos.
-
-`Next.js` · `PostgreSQL`
 
 </td>
 </tr>
@@ -92,16 +74,26 @@ Proyectos, sprints, horas y finanzas del equipo en un solo lugar. Dos roles, per
 </td>
 <td width="50%" valign="top">
 
-### 🖥️ Infraestructura propia
-No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y alertas, con la config versionada y **116 checks** que la verifican.
+### 🎯 Prospección local
+Negocios paraguayos sin presencia web, segmentados por ciudad y rubro, con seguimiento del embudo y cuota diaria de contactos.
 
-`Docker` · `Grafana` · `Nginx` · `Ubuntu`
+`Next.js` · `PostgreSQL`
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🖥️ Infraestructura propia
+No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y alertas sobre nuestra propia VPS, con la configuración versionada y **116 checks** que verifican que todo siga como debe.
+
+`Docker` · `Grafana` · `Nginx` · `Ubuntu 24.04`
 
 </td>
 </tr>
 </table>
 
-> Son desarrollos propios y para clientes, por ahora en repos privados. Si te sirve alguno para tu negocio, escribinos.
+> Son desarrollos propios, por ahora en repos privados. Si te sirve alguno para tu negocio, escribinos.
 
 <br>
 
