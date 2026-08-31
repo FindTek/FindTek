@@ -146,9 +146,9 @@ No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y a
 
 Contanos cómo trabajás hoy y te decimos qué se puede automatizar. Sin costo.
 
-[<kbd> <br> 💬 &nbsp; Escribinos por WhatsApp &nbsp; ➜ <br> </kbd>](https://wa.me/595985244443)
-&nbsp;&nbsp;
-[<kbd> <br> 🌐 &nbsp; Ver el sitio &nbsp; ➜ <br> </kbd>](https://www.findtek.com.py)
+[![Escribinos por WhatsApp](https://img.shields.io/badge/Escribinos_por_WhatsApp_%E2%9E%9C-E8645C?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/595985244443)
+&nbsp;
+[![Ver el sitio](https://img.shields.io/badge/Ver_el_sitio_%E2%9E%9C-71332F?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.findtek.com.py)
 
 <br><br>
 
