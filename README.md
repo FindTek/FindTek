@@ -123,10 +123,18 @@ Lo que resolvemos para nuestros proyectos y le sirve a cualquier dev paraguayo, 
 
 <table>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
 
 ### 📇 [ruc-paraguay](https://github.com/FindTek/ruc-paraguay)
-Validación del **RUC paraguayo** en el navegador o en el servidor, sin llamar a la DNIT. Cero dependencias. Verificado contra **1.995.012 RUC reales** del padrón completo: ninguno vigente falla.
+Validación del **RUC paraguayo** sin llamar a la DNIT. Verificado contra **1.995.012 RUC reales** del padrón completo: ninguno vigente falla.
+
+`TypeScript` · `MIT` · `0 dependencias`
+
+</td>
+<td width="50%" valign="top">
+
+### 🧾 [sifen-cdc](https://github.com/FindTek/sifen-cdc)
+El **CDC de SIFEN** (e-Kuatia): composición, validación y formato KuDE. Verificado contra el ejemplo oficial del **Manual Técnico v150**.
 
 `TypeScript` · `MIT` · `0 dependencias`
 
