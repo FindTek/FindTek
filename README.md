@@ -58,9 +58,11 @@
 <img src="assets/mockup-gastro.png" width="49%" alt="Mockup de FindTek Gastro — pantalla de venta con facturación SIFEN">
 <img src="assets/mockup-gestion.png" width="49%" alt="Mockup de FindTek Gestión — panel de sprint, horas y finanzas">
 
+<img src="assets/mockup-disparador.png" width="99%" alt="Mockup del Disparador multiplataforma — un asset derivado a siete redes">
+
 **🎨 Mockups de diseño — no son capturas del producto.**
 
-<sub><b>FindTek Gastro</b> y <b>FindTek Gestión</b> están en desarrollo. Estas pantallas
+<sub><b>FindTek Gastro</b>, <b>FindTek Gestión</b> y el <b>Disparador</b> están en desarrollo. Estas pantallas
 muestran cómo se ven las funciones que ya están especificadas; la interfaz final puede
 cambiar. Los datos son de ejemplo.</sub>
 
