@@ -60,9 +60,11 @@
 
 <img src="assets/mockup-disparador.png" width="99%" alt="Mockup del Disparador multiplataforma — un asset derivado a siete redes">
 
+<img src="assets/mockup-gimnasio.png" width="99%" alt="Mockup de la gestión para gimnasios — cobranza con estados de cuota">
+
 **🎨 Mockups de diseño — no son capturas del producto.**
 
-<sub><b>FindTek Gastro</b>, <b>FindTek Gestión</b> y el <b>Disparador</b> están en desarrollo. Estas pantallas
+<sub><b>FindTek Gastro</b>, <b>FindTek Gestión</b>, el <b>Disparador</b> y la <b>gestión para gimnasios</b> están en desarrollo. Estas pantallas
 muestran cómo se ven las funciones que ya están especificadas; la interfaz final puede
 cambiar. Los datos son de ejemplo.</sub>
 

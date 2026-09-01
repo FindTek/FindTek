@@ -1,6 +1,6 @@
 # Fuente de los mockups
 
-`disparador.html` es el mockup de FindTek Disparador escrito como HTML real. El PNG del
+`disparador.html` y `gimnasio.html` son mockups escritos como HTML real. El PNG del
 README se genera desde acá, así que la imagen es reproducible y editable — no un export
 suelto de una herramienta de diseño.
 
@@ -22,5 +22,13 @@ chromium --headless --disable-gpu --no-sandbox --hide-scrollbars \
 El alto final (600 px CSS) sale de medir dónde termina el contenido y recortar el resto,
 no de un número elegido a ojo.
 
-> Los otros dos mockups (`mockup-gastro.png`, `mockup-gestion.png`) se hicieron en Figma
-> y **no tienen fuente acá**. Al rehacerlos, conviene pasarlos también a HTML.
+## Cada mockup usa la identidad de SU producto
+
+`disparador.html` va con la paleta de FindTek (coral `#E8645C`). `gimnasio.html` va con
+la paleta **«Oro y Ceniza»** del sistema de gimnasios, tomada de su
+`docs/identidad-visual.md` — amarillo `#FACC15` solo como acción, semáforo para estado,
+y la tarjeta negra como firma visual. Los tokens están declarados arriba de cada archivo:
+ningún hex suelto en los componentes, que es regla de esa guía.
+
+> Los otros dos (`mockup-gastro.png`, `mockup-gestion.png`) se hicieron en Figma y **no
+> tienen fuente acá**. Al rehacerlos, conviene pasarlos también a HTML.
