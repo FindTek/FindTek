@@ -108,12 +108,20 @@ Negocios paraguayos sin presencia web, segmentados por ciudad y rubro, con segui
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
+
+### 🏋️ Gestión para gimnasios
+SaaS multi-tenant: socios, planes y suscripciones con historial, generación automática de cuotas, cobro con mora y descuento, caja con arqueo, y un motor de permisos de dos capas con bitácora.
+
+`Fastify` · `Prisma` · `Next.js` · `PWA`
+
+</td>
+<td width="50%" valign="top">
 
 ### 🖥️ Infraestructura propia
-No solo escribimos el software: lo operamos. Monitoreo, backups automáticos y alertas sobre nuestra propia VPS, con la configuración versionada y **116 checks** que verifican que todo siga como debe.
+No solo escribimos el software: lo operamos. Monitoreo, backups y alertas sobre nuestra propia VPS, con la configuración versionada y **116 checks** que la verifican.
 
-`Docker` · `Grafana` · `Nginx` · `Ubuntu 24.04`
+`Docker` · `Grafana` · `Nginx` · `Ubuntu`
 
 </td>
 </tr>
