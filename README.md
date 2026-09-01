@@ -4,7 +4,8 @@
 
 <br>
 
-**Sistemas a medida, automatizaciones y páginas web para pymes paraguayas.**
+**FindTek es una software factory de San Lorenzo, Paraguay.** Somos tres desarrolladores y construimos
+sistemas a medida, automatizaciones, páginas web y e-commerce para pymes paraguayas.
 
 <a href="https://www.findtek.com.py/servicios/sistemas-a-medida/">Sistemas a medida</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
