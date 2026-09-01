@@ -128,7 +128,9 @@ Lo que resolvemos para nuestros proyectos y le sirve a cualquier dev paraguayo, 
 ### 📇 [ruc-paraguay](https://github.com/FindTek/ruc-paraguay)
 Validación del **RUC paraguayo** sin llamar a la DNIT. Verificado contra **1.995.012 RUC reales** del padrón completo: ninguno vigente falla.
 
-`TypeScript` · `MIT` · `0 dependencias`
+```bash
+npm i @findtek/ruc-paraguay
+```
 
 </td>
 <td width="50%" valign="top">
@@ -136,7 +138,9 @@ Validación del **RUC paraguayo** sin llamar a la DNIT. Verificado contra **1.99
 ### 🧾 [sifen-cdc](https://github.com/FindTek/sifen-cdc)
 El **CDC de SIFEN** (e-Kuatia): composición, validación y formato KuDE. Verificado contra el ejemplo oficial del **Manual Técnico v150**.
 
-`TypeScript` · `MIT` · `0 dependencias`
+```bash
+npm i sifen-cdc
+```
 
 </td>
 </tr>
