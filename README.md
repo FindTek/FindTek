@@ -55,10 +55,14 @@
 
 <div align="center">
 
-<img src="assets/mockup-gastro.png" width="49%" alt="FindTek Gastro — pantalla de venta con facturación SIFEN">
-<img src="assets/mockup-gestion.png" width="49%" alt="FindTek Gestión — panel de sprint, horas y finanzas">
+<img src="assets/mockup-gastro.png" width="49%" alt="Mockup de FindTek Gastro — pantalla de venta con facturación SIFEN">
+<img src="assets/mockup-gestion.png" width="49%" alt="Mockup de FindTek Gestión — panel de sprint, horas y finanzas">
 
-<sub>Vistas de diseño de <b>FindTek Gastro</b> y <b>FindTek Gestión</b></sub>
+**🎨 Mockups de diseño — no son capturas del producto.**
+
+<sub><b>FindTek Gastro</b> y <b>FindTek Gestión</b> están en desarrollo. Estas pantallas
+muestran cómo se ven las funciones que ya están especificadas; la interfaz final puede
+cambiar. Los datos son de ejemplo.</sub>
 
 </div>
 
