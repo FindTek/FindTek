@@ -1,0 +1,90 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="chrome.css">
+<style>
+.pos{display:flex;gap:16px}
+.izq{flex:1}
+.cats{display:flex;gap:8px;margin-bottom:13px}
+.cat{font-size:11.5px;font-weight:500;color:var(--ink2);background:var(--surface);
+     border:1px solid rgba(255,255,255,.055);border-radius:18px;padding:6px 13px}
+.cat.on{background:var(--acc);color:#fff;border-color:transparent;
+        box-shadow:0 5px 14px -5px var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.it{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+    overflow:hidden;box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28)}
+.im{height:66px;background:linear-gradient(135deg,#3a2320,#26191700 70%),
+     radial-gradient(60px 40px at 70% 30%,rgba(232,100,92,.25),transparent)}
+.ib{padding:9px 11px}
+.ib b{font-size:12px;font-weight:600;display:block}
+.ib span{font-size:11px;color:var(--acc);font-variant-numeric:tabular-nums}
+.der{width:322px;flex:none}
+.tick{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+      box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28);overflow:hidden}
+.li{display:flex;align-items:center;gap:9px;padding:9px 14px;font-size:12px;
+    border-bottom:1px solid rgba(255,255,255,.038)}
+.qt{color:var(--acc);font-weight:700;font-size:11px;width:20px}
+.li .nm{flex:1}.li .pr{font-variant-numeric:tabular-nums;font-weight:500}
+.tot{padding:12px 14px;border-top:1px solid rgba(255,255,255,.07)}
+.fl{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink3);
+    padding:3px 0;font-variant-numeric:tabular-nums}
+.fl.big{color:var(--ink);font-size:20px;font-weight:700;padding-top:9px;
+        letter-spacing:-.02em}
+.fl.big span:last-child{color:var(--acc)}
+.acc{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px}
+.acc .btn{text-align:center;padding:12px}
+.acc .btn2{text-align:center}
+</style>
+<div class="win">
+  <div class="bar"><div class="dt"></div><div class="dt"></div><div class="dt"></div>
+    <div class="crumb">FindTek Gastro &nbsp;/&nbsp; <b>Salón · Mesa 7</b></div></div>
+  <div class="app">
+    <div class="side">
+      <div class="mark"><div class="logo">G</div><span>Gastro</span></div>
+      <div class="grp">SALÓN</div>
+      <div class="nav on"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.4"/><path d="M3 9h18M9 9v11"/></svg>Mesas</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Comandas</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M5 21V8l7-5 7 5v13"/><path d="M9.5 21v-6h5v6"/></svg>Delivery</div>
+      <div class="grp">CAJA</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="2.4"/><path d="M2.5 10h19M6.5 14.5h4"/></svg>Cobros</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M6 3h12l2 5H4l2-5zM5 8v11a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>Fiscal</div>
+      <div class="pie"><div class="av">RM</div><div>Rocío M.<br><small>Mozo · turno 19:00</small></div></div>
+    </div>
+    <div class="main">
+      <div class="head"><div><div class="h1">Mesa 7</div>
+        <div class="sub">Salón · abierta 19:42 · 4 comensales</div></div>
+        <div style="display:flex;gap:9px"><div class="btn2">Dividir cuenta</div>
+        <div class="btn">Cobrar y facturar</div></div></div>
+      <div class="pos">
+        <div class="izq">
+          <div class="cats"><span class="cat on">Todos</span><span class="cat">Entradas</span>
+            <span class="cat">Platos</span><span class="cat">Bebidas</span><span class="cat">Postres</span></div>
+          <div class="grid">
+            <div class="it"><div class="im"></div><div class="ib"><b>Milanesa napolitana</b><span>₲ 45.000</span></div></div>
+            <div class="it"><div class="im"></div><div class="ib"><b>Lomito completo</b><span>₲ 52.000</span></div></div>
+            <div class="it"><div class="im"></div><div class="ib"><b>Empanada de carne</b><span>₲ 12.000</span></div></div>
+            <div class="it"><div class="im"></div><div class="ib"><b>Chipa guasu</b><span>₲ 25.000</span></div></div>
+            <div class="it"><div class="im"></div><div class="ib"><b>Cerveza artesanal</b><span>₲ 18.000</span></div></div>
+            <div class="it"><div class="im"></div><div class="ib"><b>Terere de la casa</b><span>₲ 8.000</span></div></div>
+          </div>
+        </div>
+        <div class="der">
+          <div class="tick">
+            <div class="ch"><b>Pedido</b><span>4 items</span></div>
+            <div class="li"><span class="qt">2×</span><span class="nm">Milanesa napolitana</span><span class="pr">₲ 90.000</span></div>
+            <div class="li"><span class="qt">1×</span><span class="nm">Lomito completo</span><span class="pr">₲ 52.000</span></div>
+            <div class="li"><span class="qt">3×</span><span class="nm">Empanada de carne</span><span class="pr">₲ 36.000</span></div>
+            <div class="li"><span class="qt">2×</span><span class="nm">Cerveza artesanal</span><span class="pr">₲ 36.000</span></div>
+            <div class="tot">
+              <div class="fl"><span>Subtotal</span><span>₲ 214.000</span></div>
+              <div class="fl"><span>IVA 10%</span><span>₲ 21.400</span></div>
+              <div class="fl big"><span>Total</span><span>₲ 235.400</span></div>
+            </div>
+            <div class="acc">
+              <span class="p p-ok" style="align-self:flex-start">SIFEN conectado · e-Kuatia</span>
+            </div>
+          </div>
+          <div class="sub" style="margin-top:11px;line-height:1.55">Funciona sin internet:
+            el CDC se compone en la terminal y la cola transmite al reconectar.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

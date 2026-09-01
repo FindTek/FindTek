@@ -1,34 +1,38 @@
 # Fuente de los mockups
 
-`disparador.html` y `gimnasio.html` son mockups escritos como HTML real. El PNG del
-README se genera desde acá, así que la imagen es reproducible y editable — no un export
-suelto de una herramienta de diseño.
-
-## Regenerar el PNG
+Los cuatro mockups del README **son HTML real**, no exports de una herramienta de
+diseño. El PNG se genera desde acá, así que son reproducibles y editables por
+cualquiera que sepa CSS.
 
 ```bash
-# 1. Traer Inter (no se versiona: son ~400 KB que no aportan al repo)
-for w in 400 500 600 700; do
-  curl -sL "https://cdn.jsdelivr.net/npm/@fontsource/inter/files/inter-latin-$w-normal.woff2" \
-    -o "inter-$w.woff2"
-done
-
-# 2. Renderizar a 2x
-chromium --headless --disable-gpu --no-sandbox --hide-scrollbars \
-  --force-device-scale-factor=2 --screenshot=../mockup-disparador.png \
-  --window-size=1200,600 "file://$PWD/disparador.html"
+./render.sh              # los cuatro
+./render.sh gimnasio     # uno solo
 ```
 
-El alto final (600 px CSS) sale de medir dónde termina el contenido y recortar el resto,
-no de un número elegido a ojo.
+| Archivo | Pantalla |
+|---|---|
+| `gastro.html` | POS de salón, mesa abierta con facturación SIFEN |
+| `gestion.html` | Panel de sprint: horas, tareas, finanzas y equipo |
+| `disparador.html` | Un asset derivado a siete redes |
+| `gimnasio.html` | Cobranza con estados de cuota |
 
-## Cada mockup usa la identidad de SU producto
+## Cómo está armado
 
-`disparador.html` va con la paleta de FindTek (coral `#E8645C`). `gimnasio.html` va con
-la paleta **«Oro y Ceniza»** del sistema de gimnasios, tomada de su
-`docs/identidad-visual.md` — amarillo `#FACC15` solo como acción, semáforo para estado,
-y la tarjeta negra como firma visual. Los tokens están declarados arriba de cada archivo:
-ningún hex suelto en los componentes, que es regla de esa guía.
+`chrome.css` tiene la base compartida — ventana, sidebar, tarjetas, pills, botones —
+con los colores en variables. Cada pantalla sobrescribe solo lo suyo.
 
-> Los otros dos (`mockup-gastro.png`, `mockup-gestion.png`) se hicieron en Figma y **no
-> tienen fuente acá**. Al rehacerlos, conviene pasarlos también a HTML.
+**Cada mockup usa la identidad de SU producto.** Los tres de FindTek van con el coral
+`#E8645C`; `gimnasio.html` va con la paleta **«Oro y Ceniza»** del sistema de
+gimnasios, tomada de su `docs/identidad-visual.md`: amarillo `#FACC15` solo como
+acción, semáforo para estado, y la tarjeta negra como firma visual.
+
+## Detalles que importan al editarlos
+
+- **El alto no se elige a ojo.** `recortar.py` mide por luminancia dónde termina la
+  ventana y corta ahí. El fondo tiene degradado, así que comparar contra un color
+  plano no sirve.
+- **Las barras del gráfico necesitan alto definido** en su contenedor: sin
+  `height:100%` en `.b`, el `height:%` de cada barra resuelve a 0 y el gráfico sale
+  vacío. Pasó.
+- **Inter se baja al renderizar** y está en `.gitignore`. Sin ella el render cae al
+  stack del sistema y se ve distinto.

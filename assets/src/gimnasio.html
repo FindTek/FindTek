@@ -4,109 +4,158 @@
 @font-face{font-family:Inter;src:url(inter-500.woff2)format('woff2');font-weight:500}
 @font-face{font-family:Inter;src:url(inter-600.woff2)format('woff2');font-weight:600}
 @font-face{font-family:Inter;src:url(inter-700.woff2)format('woff2');font-weight:700}
-/* Tokens de docs/identidad-visual.md — paleta «Oro y Ceniza», tema oscuro.
-   Ningún hex suelto en los componentes: regla 5. */
 :root{
-  --bg:#121316; --surface:#1C1D21; --inverse:#000000; --ink:#EDEEF0; --ink2:#94979C;
-  --border:#33353A; --yellow:#FACC15; --on-yellow:#17181A; --yellow-soft:#35300E;
+  --bg:#0C0D0F; --surface:#1C1D21; --raise:#232428; --inverse:#000;
+  --ink:#EDEEF0; --ink2:#94979C; --ink3:#6E7276; --border:#33353A;
+  --yellow:#FACC15; --on-yellow:#17181A; --yellow-soft:#35300E;
   --ok:#4ADE80; --ok-soft:#14351F; --warn:#FB923C; --warn-soft:#3A2210;
-  --danger:#F87171; --danger-soft:#3B1717; --info:#60A5FA; --info-soft:#16283F;
+  --danger:#F87171; --danger-soft:#3B1717;
+  --hair:inset 0 1px 0 rgba(255,255,255,.055);
 }
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:auto;background:var(--bg);color:var(--ink);
-     font-family:Inter,-apple-system,system-ui,sans-serif;padding-bottom:26px;
-     overflow:hidden;border-radius:16px}
-.top{height:62px;display:flex;align-items:center;justify-content:space-between;
-     padding:0 28px;border-bottom:1px solid var(--border);background:var(--surface)}
-.app{font-weight:700;font-size:16px}
-.sede{font-size:12px;color:var(--ink2);border:1px solid var(--border);
-      border-radius:8px;padding:5px 11px;margin-left:14px}
-.rol{font-size:11px;font-weight:600;color:var(--yellow);
-     background:var(--yellow-soft);border-radius:6px;padding:4px 9px}
-.wrap{padding:24px 28px 0}
-.kpis{display:flex;gap:14px;margin-bottom:22px}
-.k{flex:1;background:var(--surface);border:1px solid var(--border);
-   border-radius:12px;padding:15px 17px}
-.k .t{font-size:11px;color:var(--ink2);margin-bottom:7px}
-.k .v{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
-.k .s{font-size:11px;color:var(--ink2);margin-top:5px}
-/* Regla 3: la tarjeta negra con amarillo es la firma visual. Una sola. */
-.k.sig{background:var(--inverse);border-color:#000}
+body{width:1280px;height:auto;padding:34px;font-family:Inter,system-ui,sans-serif;
+     color:var(--ink);background:
+       radial-gradient(760px 420px at 88% -8%, rgba(250,204,21,.10), transparent 62%),
+       radial-gradient(620px 380px at 4% 108%, rgba(250,204,21,.045), transparent 60%),
+       var(--bg);}
+/* ventana */
+.win{border-radius:15px;overflow:hidden;border:1px solid rgba(255,255,255,.075);
+     box-shadow:0 40px 90px -22px rgba(0,0,0,.85), 0 0 0 1px rgba(0,0,0,.5);
+     background:#141518}
+.bar{height:40px;display:flex;align-items:center;gap:8px;padding:0 15px;
+     background:#101114;border-bottom:1px solid rgba(255,255,255,.055)}
+.dt{width:10px;height:10px;border-radius:50%}
+.crumb{margin-left:12px;font-size:11.5px;color:var(--ink3)}
+.crumb b{color:var(--ink2);font-weight:500}
+.app{display:flex;min-height:520px}
+/* sidebar */
+.side{width:206px;flex:none;background:#111214;border-right:1px solid rgba(255,255,255,.05);
+      padding:17px 12px;display:flex;flex-direction:column}
+.mark{display:flex;align-items:center;gap:9px;padding:0 8px 15px}
+.logo{width:27px;height:27px;border-radius:8px;background:var(--yellow);
+      display:grid;place-items:center;color:var(--on-yellow);font-weight:700;font-size:14px}
+.mark span{font-size:13.5px;font-weight:600;letter-spacing:-.01em}
+.grp{font-size:9.5px;color:var(--ink3);letter-spacing:.09em;padding:11px 9px 6px}
+.nav{display:flex;align-items:center;gap:10px;padding:8px 9px;border-radius:8px;
+     font-size:12.5px;color:var(--ink2);font-weight:500}
+.nav.on{background:var(--raise);color:var(--ink);box-shadow:var(--hair)}
+.nav.on svg{stroke:var(--yellow)}
+.nav svg{width:15px;height:15px;fill:none;stroke:var(--ink3);stroke-width:1.7;
+         stroke-linecap:round;stroke-linejoin:round}
+.sede{margin-top:auto;border-top:1px solid rgba(255,255,255,.05);padding:12px 9px 0;
+      display:flex;align-items:center;gap:9px}
+.av{width:26px;height:26px;border-radius:7px;background:var(--raise);display:grid;
+    place-items:center;font-size:10.5px;font-weight:700;color:var(--yellow)}
+.sede div{font-size:11.5px;font-weight:600;line-height:1.35}
+.sede small{color:var(--ink3);font-weight:400;font-size:10.5px}
+/* contenido */
+.main{flex:1;padding:20px 22px 24px;background:
+      linear-gradient(180deg,#17181B 0%,#141518 100%)}
+.head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:17px}
+.h1{font-size:19px;font-weight:700;letter-spacing:-.02em}
+.sub{font-size:11.5px;color:var(--ink3);margin-top:3px}
+.btn{background:var(--yellow);color:var(--on-yellow);font-size:12.5px;font-weight:700;
+     border-radius:9px;padding:10px 17px;box-shadow:0 6px 18px -6px rgba(250,204,21,.55)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.k{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+   padding:13px 15px;box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28)}
+.k .t{font-size:10.5px;color:var(--ink3);margin-bottom:6px}
+.k .v{font-size:21px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.k .s{font-size:10.5px;margin-top:4px;color:var(--ink3)}
+.k .s.up{color:var(--ok)}
+.k.sig{background:linear-gradient(150deg,#000 0%,#0B0B0C 100%);border-color:#000}
 .k.sig .v{color:var(--yellow)}
-.k.sig .t,.k.sig .s{color:#8E9196}
-.lbl{font-size:11px;color:var(--ink2);letter-spacing:.05em;text-transform:uppercase;
-     margin-bottom:9px}
-/* Regla 4: la tabla queda en neutrales para que salten los pills. */
-.tbl{background:var(--surface);border:1px solid var(--border);border-radius:12px;
-     overflow:hidden}
-.hd,.rw{display:flex;align-items:center;padding:11px 18px;gap:14px}
-.hd{font-size:11px;color:var(--ink2);border-bottom:1px solid var(--border)}
-.rw{border-bottom:1px solid var(--border);font-size:13px}
+.bar-mini{height:3px;border-radius:2px;background:#2A2B2F;margin-top:8px;overflow:hidden}
+.bar-mini i{display:block;height:100%;width:57%;background:var(--yellow);border-radius:2px}
+.card{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+      overflow:hidden;box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28)}
+.ch{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;
+    border-bottom:1px solid rgba(255,255,255,.05)}
+.ch b{font-size:12.5px;font-weight:600}
+.ch span{font-size:10.5px;color:var(--ink3)}
+.hd,.rw{display:grid;grid-template-columns:1.5fr 1.15fr .62fr .82fr 1.32fr;
+        align-items:center;gap:12px;padding:9.5px 16px}
+.hd{font-size:10px;color:var(--ink3);letter-spacing:.05em;
+    border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.012)}
+.rw{border-bottom:1px solid rgba(255,255,255,.038);font-size:12.5px}
 .rw:last-child{border-bottom:none}
-.c1{width:186px;font-weight:600}.c2{width:150px;color:var(--ink2);font-size:12px}
-.c3{width:96px;color:var(--ink2);font-size:12px;font-variant-numeric:tabular-nums}
-.c4{width:118px;text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
-.c5{flex:1;display:flex;justify-content:flex-end}
-.p{font-size:11px;font-weight:600;border-radius:11px;padding:4px 10px;white-space:nowrap}
+.who{display:flex;align-items:center;gap:9px;font-weight:600}
+.ini{width:25px;height:25px;border-radius:50%;background:var(--raise);display:grid;
+     place-items:center;font-size:9.5px;font-weight:700;color:var(--ink2);flex:none}
+.mut{color:var(--ink3);font-size:11.5px}
+.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.st{display:flex;justify-content:flex-end}
+.p{font-size:10.5px;font-weight:600;border-radius:20px;padding:3.5px 10px;white-space:nowrap;
+   display:inline-flex;align-items:center;gap:5px}
+.p:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
 .p-ok{background:var(--ok-soft);color:var(--ok)}
 .p-wn{background:var(--warn-soft);color:var(--warn)}
 .p-dg{background:var(--danger-soft);color:var(--danger)}
-.p-in{background:var(--info-soft);color:var(--info)}
-.foot{display:flex;align-items:center;gap:18px;margin-top:20px}
-/* Regla 1: botón amarillo con tinta negra. Regla 4: el amarillo es la acción. */
-.btn{background:var(--yellow);color:var(--on-yellow);font-size:14px;font-weight:700;
-     border-radius:10px;padding:12px 24px}
-.btn2{border:1px solid var(--border);color:var(--ink2);font-size:13px;font-weight:500;
-      border-radius:10px;padding:12px 20px}
-.nota{font-size:12px;color:var(--ink2);line-height:1.6}
 </style>
-<div class="top">
-  <div style="display:flex;align-items:center">
-    <span class="app">Sistema de Gimnasio</span><span class="sede">Sede Centro</span>
+<div class="win">
+  <div class="bar">
+    <div class="dt" style="background:#3C3E43"></div><div class="dt" style="background:#3C3E43"></div>
+    <div class="dt" style="background:#3C3E43"></div>
+    <div class="crumb">Sistema de Gimnasio &nbsp;/&nbsp; <b>Cobranza</b></div>
   </div>
-  <div style="display:flex;align-items:center;gap:14px">
-    <span style="font-size:12px;color:var(--ink2)">Cobranza · septiembre</span>
-    <span class="rol">ADMIN</span>
-  </div>
-</div>
-<div class="wrap">
-  <div class="kpis">
-    <div class="k"><div class="t">Socios activos</div><div class="v">412</div>
-      <div class="s">+18 este mes</div></div>
-    <div class="k"><div class="t">Cuotas generadas</div><div class="v">412</div>
-      <div class="s">job horario · idempotente</div></div>
-    <div class="k"><div class="t">Cobrado hoy</div><div class="v">₲ 4.180.000</div>
-      <div class="s">23 cobros · 2 parciales</div></div>
-    <div class="k sig"><div class="t">Aforo ahora</div><div class="v">68 / 120</div>
-      <div class="s">sala principal</div></div>
-  </div>
-  <div class="lbl">Cuotas por cobrar</div>
-  <div class="tbl">
-    <div class="hd"><div class="c1">Socio</div><div class="c2">Plan</div>
-      <div class="c3">Vence</div><div class="c4">Monto</div><div class="c5">Estado</div></div>
-    <div class="rw"><div class="c1">Ayala, Lucía</div><div class="c2">Full trimestral</div>
-      <div class="c3">15/11</div><div class="c4">₲ 750.000</div>
-      <div class="c5"><span class="p p-ok">al día</span></div></div>
-    <div class="rw"><div class="c1">Rodríguez, Ana</div><div class="c2">Full mensual</div>
-      <div class="c3">03/09</div><div class="c4">₲ 280.000</div>
-      <div class="c5"><span class="p p-wn">vence en 2 días</span></div></div>
-    <div class="rw"><div class="c1">Giménez, Marcos</div><div class="c2">Musculación</div>
-      <div class="c3">01/09</div><div class="c4">₲ 190.000</div>
-      <div class="c5"><span class="p p-wn">parcial · resta ₲ 100.000</span></div></div>
-    <div class="rw"><div class="c1">Ortiz, Diego</div><div class="c2">Funcional</div>
-      <div class="c3">30/08</div><div class="c4">₲ 210.000</div>
-      <div class="c5"><span class="p p-dg">vencido · mora ₲ 12.600</span></div></div>
-    <div class="rw"><div class="c1">Benítez, Carlos</div><div class="c2">Musculación</div>
-      <div class="c3">28/08</div><div class="c4">₲ 190.000</div>
-      <div class="c5"><span class="p p-dg">vencido · 4 días</span></div></div>
-    <div class="rw"><div class="c1">Duarte, Sofía</div><div class="c2">Full mensual</div>
-      <div class="c3">22/09</div><div class="c4">₲ 280.000</div>
-      <div class="c5"><span class="p p-ok">al día</span></div></div>
-  </div>
-  <div class="foot">
-    <span class="btn">Registrar cobro</span>
-    <span class="btn2">Arqueo de caja</span>
-    <div class="nota">La mora se calcula al cobrar, no al vencer.<br>
-      Cada cobro queda en la bitácora con quién, cuándo y desde qué caja.</div>
+  <div class="app">
+    <div class="side">
+      <div class="mark"><div class="logo">G</div><span>Gimnasio</span></div>
+      <div class="grp">OPERACIÓN</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Panel</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.2 2.7-5.2 6-5.2s6 2 6 5.2"/><path d="M17 11h4M19 9v4"/></svg>Socios</div>
+      <div class="nav on"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="2.4"/><path d="M2.5 10h19"/><path d="M6.5 14.5h4"/></svg>Cobranza</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="16" rx="2.4"/><path d="M3.5 9.5h17M8.5 2.5v4M15.5 2.5v4"/></svg>Turnos</div>
+      <div class="grp">ADMINISTRACIÓN</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-6M21 19H3"/></svg>Reportes</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.1"/><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4L5.3 5.3"/></svg>Permisos</div>
+      <div class="sede"><div class="av">SC</div>
+        <div>Sede Centro<br><small>Rol: ADMIN</small></div></div>
+    </div>
+    <div class="main">
+      <div class="head">
+        <div><div class="h1">Cobranza</div><div class="sub">Septiembre 2026 · 412 cuotas generadas</div></div>
+        <div class="btn">Registrar cobro</div>
+      </div>
+      <div class="kpis">
+        <div class="k"><div class="t">Socios activos</div><div class="v">412</div>
+          <div class="s up">+18 este mes</div></div>
+        <div class="k"><div class="t">Cobrado hoy</div><div class="v">₲ 4.180.000</div>
+          <div class="s">23 cobros · 2 parciales</div></div>
+        <div class="k"><div class="t">Pendiente</div><div class="v">₲ 1.240.000</div>
+          <div class="s">6 cuotas · 2 vencidas</div></div>
+        <div class="k sig"><div class="t">Aforo ahora</div><div class="v">68 / 120</div>
+          <div class="bar-mini"><i></i></div></div>
+      </div>
+      <div class="card">
+        <div class="ch"><b>Cuotas por cobrar</b><span>6 de 412 · orden por vencimiento</span></div>
+        <div class="hd"><div>SOCIO</div><div>PLAN</div><div>VENCE</div>
+          <div class="num">MONTO</div><div class="st">ESTADO</div></div>
+        <div class="rw"><div class="who"><div class="ini">OD</div>Ortiz, Diego</div>
+          <div class="mut">Funcional</div><div class="mut">30/08</div>
+          <div class="num">₲ 210.000</div>
+          <div class="st"><span class="p p-dg">vencido · mora ₲ 12.600</span></div></div>
+        <div class="rw"><div class="who"><div class="ini">BC</div>Benítez, Carlos</div>
+          <div class="mut">Musculación</div><div class="mut">28/08</div>
+          <div class="num">₲ 190.000</div>
+          <div class="st"><span class="p p-dg">vencido · 4 días</span></div></div>
+        <div class="rw"><div class="who"><div class="ini">GM</div>Giménez, Marcos</div>
+          <div class="mut">Musculación</div><div class="mut">01/09</div>
+          <div class="num">₲ 190.000</div>
+          <div class="st"><span class="p p-wn">parcial · resta ₲ 100.000</span></div></div>
+        <div class="rw"><div class="who"><div class="ini">RA</div>Rodríguez, Ana</div>
+          <div class="mut">Full mensual</div><div class="mut">03/09</div>
+          <div class="num">₲ 280.000</div>
+          <div class="st"><span class="p p-wn">vence en 2 días</span></div></div>
+        <div class="rw"><div class="who"><div class="ini">AL</div>Ayala, Lucía</div>
+          <div class="mut">Full trimestral</div><div class="mut">15/11</div>
+          <div class="num">₲ 750.000</div>
+          <div class="st"><span class="p p-ok">al día</span></div></div>
+        <div class="rw"><div class="who"><div class="ini">DS</div>Duarte, Sofía</div>
+          <div class="mut">Full mensual</div><div class="mut">22/09</div>
+          <div class="num">₲ 280.000</div>
+          <div class="st"><span class="p p-ok">al día</span></div></div>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,88 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="chrome.css">
+<style>
+.dos{display:flex;gap:14px}
+.izq{flex:1}.der{width:322px;flex:none}
+.bars{display:flex;align-items:stretch;gap:16px;height:172px;padding:20px 18px 0}
+/* .b necesita alto definido: sin esto el height:% de las barras resuelve a 0. */
+.b{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;
+   align-items:center;gap:7px}
+.b i{display:block;width:100%;border-radius:6px 6px 2px 2px;background:var(--acc);opacity:.34}
+.b.now i{opacity:1;box-shadow:0 0 22px -4px var(--acc)}
+.b span{font-size:10px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.eje{display:flex;justify-content:space-between;padding:9px 18px 14px;
+     font-size:10px;color:var(--ink3)}
+.mem{display:flex;align-items:center;gap:10px;padding:11px 14px;
+     border-bottom:1px solid rgba(255,255,255,.038)}
+.mem:last-child{border-bottom:none}
+.mem .n{flex:1}.mem .n b{font-size:12.5px;font-weight:600;display:block}
+.mem .n small{font-size:10.5px;color:var(--ink3)}
+.mem .h{font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.pb{height:4px;border-radius:2px;background:#2A2B2F;margin-top:6px;overflow:hidden}
+.pb i{display:block;height:100%;background:var(--acc);border-radius:2px}
+</style>
+<div class="win">
+  <div class="bar"><div class="dt"></div><div class="dt"></div><div class="dt"></div>
+    <div class="crumb">FindTek Gestión &nbsp;/&nbsp; <b>Sprint 14</b></div></div>
+  <div class="app">
+    <div class="side">
+      <div class="mark"><div class="logo">F</div><span>Gestión</span></div>
+      <div class="grp">TRABAJO</div>
+      <div class="nav on"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Panel</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Tareas</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Horas</div>
+      <div class="grp">FINANZAS</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-6M21 19H3"/></svg>Ingresos</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v10M9.5 9.5h5M9.5 14.5h5"/></svg>Reparto</div>
+      <div class="pie"><div class="av">AS</div><div>Alexis S.<br><small>Rol: ADMIN</small></div></div>
+    </div>
+    <div class="main">
+      <div class="head"><div><div class="h1">Sprint 14</div>
+        <div class="sub">Cierra en 4 días · 37 de 44 tareas</div></div>
+        <div class="btn">Cerrar sprint</div></div>
+      <div class="kpis">
+        <div class="k"><div class="t">Horas del sprint</div><div class="v">142 h</div>
+          <div class="s up">+18% vs anterior</div></div>
+        <div class="k"><div class="t">Tareas cerradas</div><div class="v">37 / 44</div>
+          <div class="mini"><i style="width:84%"></i></div></div>
+        <div class="k"><div class="t">Ingresos del mes</div><div class="v">₲ 48.200.000</div>
+          <div class="s">3 proyectos activos</div></div>
+        <div class="k sig"><div class="t">Margen</div><div class="v">31%</div>
+          <div class="s">meta 28%</div></div>
+      </div>
+      <div class="dos">
+        <div class="izq">
+          <div class="card">
+            <div class="ch"><b>Horas registradas</b><span>últimas 8 semanas</span></div>
+            <div class="bars">
+              <div class="b"><i style="height:57%"></i><span>96</span></div>
+              <div class="b"><i style="height:70%"></i><span>118</span></div>
+              <div class="b"><i style="height:62%"></i><span>104</span></div>
+              <div class="b"><i style="height:85%"></i><span>142</span></div>
+              <div class="b"><i style="height:78%"></i><span>131</span></div>
+              <div class="b"><i style="height:94%"></i><span>158</span></div>
+              <div class="b"><i style="height:85%"></i><span>142</span></div>
+              <div class="b now"><i style="height:100%"></i><span>167</span></div>
+            </div>
+            <div class="eje"><span>semana 7</span><span>semana 14 · en curso</span></div>
+          </div>
+        </div>
+        <div class="der">
+          <div class="card">
+            <div class="ch"><b>Equipo</b><span>3 personas</span></div>
+            <div class="mem"><div class="ini">G</div>
+              <div class="n"><b>Guillermo</b><small>Backend · Rust, NestJS</small>
+                <div class="pb"><i style="width:86%"></i></div></div><div class="h">86 h</div></div>
+            <div class="mem"><div class="ini">A</div>
+              <div class="n"><b>Alexis</b><small>Infra · Docker, VPS</small>
+                <div class="pb"><i style="width:72%"></i></div></div><div class="h">72 h</div></div>
+            <div class="mem"><div class="ini">H</div>
+              <div class="n"><b>Hugo</b><small>Frontend · Next.js</small>
+                <div class="pb"><i style="width:64%"></i></div></div><div class="h">64 h</div></div>
+          </div>
+          <div class="sub" style="margin-top:11px;line-height:1.55">Cada uno ve su trabajo.
+            Solo ADMIN ve la plata.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

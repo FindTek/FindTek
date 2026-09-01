@@ -1,0 +1,91 @@
+/* Base compartida de los mockups: ventana, sidebar, tarjetas, pills.
+   Los colores son variables — cada pantalla sobrescribe las suyas.
+   Por defecto: paleta FindTek (coral). */
+:root{
+  --bg:#0C0D0F; --surface:#1C1D21; --raise:#232428;
+  --ink:#F2EEEC; --ink2:#94979C; --ink3:#6E7276;
+  --acc:#E8645C; --on-acc:#fff; --acc-soft:#3A1F1D;
+  --ok:#4ADE80; --ok-soft:#14351F; --warn:#FB923C; --warn-soft:#3A2210;
+  --danger:#F87171; --danger-soft:#3B1717; --info:#60A5FA; --info-soft:#16283F;
+  --hair:inset 0 1px 0 rgba(255,255,255,.055);
+  --glow:rgba(232,100,92,.10); --glow2:rgba(232,100,92,.045);
+}
+@font-face{font-family:Inter;src:url(inter-400.woff2)format('woff2');font-weight:400}
+@font-face{font-family:Inter;src:url(inter-500.woff2)format('woff2');font-weight:500}
+@font-face{font-family:Inter;src:url(inter-600.woff2)format('woff2');font-weight:600}
+@font-face{font-family:Inter;src:url(inter-700.woff2)format('woff2');font-weight:700}
+*{box-sizing:border-box;margin:0}
+body{width:1280px;height:auto;padding:34px;font-family:Inter,system-ui,sans-serif;
+     color:var(--ink);background:
+       radial-gradient(760px 420px at 88% -8%, var(--glow), transparent 62%),
+       radial-gradient(620px 380px at 4% 108%, var(--glow2), transparent 60%),
+       var(--bg)}
+.win{border-radius:15px;overflow:hidden;border:1px solid rgba(255,255,255,.075);
+     box-shadow:0 40px 90px -22px rgba(0,0,0,.85),0 0 0 1px rgba(0,0,0,.5);background:#141518}
+.bar{height:40px;display:flex;align-items:center;gap:8px;padding:0 15px;
+     background:#101114;border-bottom:1px solid rgba(255,255,255,.055)}
+.dt{width:10px;height:10px;border-radius:50%;background:#3C3E43}
+.crumb{margin-left:12px;font-size:11.5px;color:var(--ink3)}
+.crumb b{color:var(--ink2);font-weight:500}
+.app{display:flex;min-height:500px}
+.side{width:206px;flex:none;background:#111214;border-right:1px solid rgba(255,255,255,.05);
+      padding:17px 12px;display:flex;flex-direction:column}
+.mark{display:flex;align-items:center;gap:9px;padding:0 8px 15px}
+.logo{width:27px;height:27px;border-radius:8px;background:var(--acc);display:grid;
+      place-items:center;color:var(--on-acc);font-weight:700;font-size:14px}
+.mark span{font-size:13.5px;font-weight:600;letter-spacing:-.01em}
+.grp{font-size:9.5px;color:var(--ink3);letter-spacing:.09em;padding:11px 9px 6px}
+.nav{display:flex;align-items:center;gap:10px;padding:8px 9px;border-radius:8px;
+     font-size:12.5px;color:var(--ink2);font-weight:500}
+.nav.on{background:var(--raise);color:var(--ink);box-shadow:var(--hair)}
+.nav.on svg{stroke:var(--acc)}
+.nav svg{width:15px;height:15px;fill:none;stroke:var(--ink3);stroke-width:1.7;
+         stroke-linecap:round;stroke-linejoin:round;flex:none}
+.pie{margin-top:auto;border-top:1px solid rgba(255,255,255,.05);padding:12px 9px 0;
+     display:flex;align-items:center;gap:9px}
+.av{width:26px;height:26px;border-radius:7px;background:var(--raise);display:grid;
+    place-items:center;font-size:10.5px;font-weight:700;color:var(--acc);flex:none}
+.pie div{font-size:11.5px;font-weight:600;line-height:1.35}
+.pie small{color:var(--ink3);font-weight:400;font-size:10.5px}
+.main{flex:1;padding:20px 22px 24px;background:linear-gradient(180deg,#17181B,#141518)}
+.head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:17px}
+.h1{font-size:19px;font-weight:700;letter-spacing:-.02em}
+.sub{font-size:11.5px;color:var(--ink3);margin-top:3px}
+.btn{background:var(--acc);color:var(--on-acc);font-size:12.5px;font-weight:700;
+     border-radius:9px;padding:10px 17px;box-shadow:0 6px 18px -6px var(--acc)}
+.btn2{border:1px solid rgba(255,255,255,.09);color:var(--ink2);font-size:12.5px;
+      font-weight:500;border-radius:9px;padding:10px 16px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.k{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+   padding:13px 15px;box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28)}
+.k .t{font-size:10.5px;color:var(--ink3);margin-bottom:6px}
+.k .v{font-size:21px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.k .s{font-size:10.5px;margin-top:4px;color:var(--ink3)}
+.k .s.up{color:var(--ok)}
+.k.sig{background:linear-gradient(150deg,#000,#0B0B0C);border-color:#000}
+.k.sig .v{color:var(--acc)}
+.mini{height:3px;border-radius:2px;background:#2A2B2F;margin-top:8px;overflow:hidden}
+.mini i{display:block;height:100%;background:var(--acc);border-radius:2px}
+.card{background:var(--surface);border:1px solid rgba(255,255,255,.055);border-radius:11px;
+      overflow:hidden;box-shadow:var(--hair),0 2px 10px rgba(0,0,0,.28)}
+.ch{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;
+    border-bottom:1px solid rgba(255,255,255,.05)}
+.ch b{font-size:12.5px;font-weight:600}.ch span{font-size:10.5px;color:var(--ink3)}
+.hd{font-size:10px;color:var(--ink3);letter-spacing:.05em;
+    border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.012)}
+.rw{border-bottom:1px solid rgba(255,255,255,.038);font-size:12.5px}
+.rw:last-child{border-bottom:none}
+.who{display:flex;align-items:center;gap:9px;font-weight:600}
+.ini{width:25px;height:25px;border-radius:50%;background:var(--raise);display:grid;
+     place-items:center;font-size:9.5px;font-weight:700;color:var(--ink2);flex:none}
+.mut{color:var(--ink3);font-size:11.5px}
+.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.st{display:flex;justify-content:flex-end}
+.p{font-size:10.5px;font-weight:600;border-radius:20px;padding:3.5px 10px;white-space:nowrap;
+   display:inline-flex;align-items:center;gap:5px}
+.p:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.p-ok{background:var(--ok-soft);color:var(--ok)}
+.p-wn{background:var(--warn-soft);color:var(--warn)}
+.p-dg{background:var(--danger-soft);color:var(--danger)}
+.p-in{background:var(--info-soft);color:var(--info)}
+.p-ac{background:var(--acc-soft);color:var(--acc)}

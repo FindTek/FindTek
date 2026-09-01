@@ -1,93 +1,90 @@
-<!doctype html><meta charset="utf-8">
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="chrome.css">
 <style>
-@font-face{font-family:Inter;src:url(inter-400.woff2)format('woff2');font-weight:400}
-@font-face{font-family:Inter;src:url(inter-500.woff2)format('woff2');font-weight:500}
-@font-face{font-family:Inter;src:url(inter-600.woff2)format('woff2');font-weight:600}
-@font-face{font-family:Inter;src:url(inter-700.woff2)format('woff2');font-weight:700}
-:root{--bg:#171717;--panel:#212121;--card:#2A2A2A;--line:#383838;
-      --coral:#E8645C;--txt:#F2EEEC;--mut:#8A8A8A;--ok:#33C77A;--warn:#E8A85C}
-*{box-sizing:border-box;margin:0}
-body{width:1200px;height:auto;min-height:520px;padding-bottom:26px;background:var(--bg);font-family:Inter,sans-serif;
-     color:var(--txt);overflow:hidden;border-radius:16px}
-.top{height:64px;background:var(--panel);display:flex;align-items:center;
-     padding:0 28px;justify-content:space-between;border-bottom:3px solid var(--coral)}
-.brand{font-weight:700;font-size:17px}.dot{color:var(--coral)}
-.mid{font-size:14px;font-weight:500;color:var(--txt)}
-.right{font-size:13px;color:var(--mut)}
-.body{display:flex;gap:24px;padding:26px 28px}
-.col-l{width:404px;flex:none}.col-r{flex:1}
-.lbl{font-size:12px;font-weight:500;color:var(--mut);margin-bottom:10px;
-     letter-spacing:.04em;text-transform:uppercase}
-.asset{background:var(--panel);border-radius:12px;padding:14px;margin-bottom:22px}
-.thumb{height:186px;border-radius:8px;position:relative;
-       background:linear-gradient(135deg,#3a2320 0%,#2A2A2A 55%,#241a18 100%);
-       display:grid;place-items:center}
-.play{width:46px;height:46px;border-radius:50%;background:rgba(232,100,92,.9);
-      display:grid;place-items:center}
-.play:after{content:"";border-left:14px solid #fff;border-top:9px solid transparent;
-            border-bottom:9px solid transparent;margin-left:4px}
-.dur{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.72);
-     border-radius:6px;padding:3px 8px;font-size:11px;font-weight:600}
-.fname{margin-top:10px;font-size:12px;color:var(--mut)}
-.copy{background:var(--panel);border-radius:12px;padding:16px}
-.copy p{font-size:13px;line-height:1.55;color:var(--txt)}
-.count{margin-top:12px;display:flex;justify-content:space-between;
-       font-size:11px;color:var(--mut);border-top:1px solid var(--line);padding-top:10px}
-.rows{background:var(--panel);border-radius:12px;padding:6px 16px}
-.row{display:flex;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);gap:12px}
-.row:last-child{border-bottom:none}
-.ic{width:30px;height:30px;border-radius:8px;background:var(--card);flex:none;
-    display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--coral)}
-.nm{width:132px;font-size:13px;font-weight:600}
-.spec{flex:1;font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
-.chip{font-size:11px;font-weight:600;border-radius:11px;padding:4px 10px;white-space:nowrap}
-.ok{background:rgba(51,199,122,.14);color:var(--ok)}
-.wn{background:rgba(232,168,92,.16);color:var(--warn)}
-.foot{display:flex;align-items:center;gap:16px;margin-top:20px}
-.btn{background:var(--coral);color:#fff;font-size:14px;font-weight:700;
-     border-radius:10px;padding:13px 26px}
-.note{font-size:12px;color:var(--mut)}
+.dos{display:flex;gap:14px}
+.izq{width:300px;flex:none}.der{flex:1}
+.thumb{height:158px;border-radius:9px;position:relative;margin-bottom:10px;
+  background:linear-gradient(135deg,#3a2320 0%,#232428 55%,#1a1416 100%);
+  display:grid;place-items:center}
+.play{width:42px;height:42px;border-radius:50%;background:var(--acc);display:grid;
+      place-items:center;box-shadow:0 8px 24px -6px var(--acc)}
+.play:after{content:"";border-left:13px solid #fff;border-top:8px solid transparent;
+            border-bottom:8px solid transparent;margin-left:4px}
+.dur{position:absolute;right:9px;bottom:9px;background:rgba(0,0,0,.78);border-radius:5px;
+     padding:3px 7px;font-size:10.5px;font-weight:600}
+.meta{font-size:11px;color:var(--ink3);padding:0 2px}
+.cp{padding:13px 14px}
+.cp p{font-size:12px;line-height:1.55}
+.cpf{margin-top:11px;display:flex;justify-content:space-between;font-size:10.5px;
+     color:var(--ink3);border-top:1px solid rgba(255,255,255,.05);padding-top:9px}
+.hd2,.rw2{display:grid;grid-template-columns:1.35fr 1.55fr 1.15fr;align-items:center;
+          gap:12px;padding:10px 16px}
+.hd2{font-size:10px;color:var(--ink3);letter-spacing:.05em;
+     border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.012)}
+.rw2{border-bottom:1px solid rgba(255,255,255,.038);font-size:12.5px}
+.rw2:last-child{border-bottom:none}
+.red{display:flex;align-items:center;gap:9px;font-weight:600}
+.rl{width:25px;height:25px;border-radius:7px;background:var(--raise);display:grid;
+    place-items:center;font-size:9.5px;font-weight:700;color:var(--acc);flex:none}
 </style>
-<div class="top">
-  <div class="brand">FindTek · Disparador<span class="dot">.</span></div>
-  <div class="mid">Lanzamiento · menú de invierno</div>
-  <div class="right">7 destinos seleccionados</div>
-</div>
-<div class="body">
-  <div class="col-l">
-    <div class="lbl">Asset maestro</div>
-    <div class="asset">
-      <div class="thumb"><div class="play"></div><div class="dur">1:35</div></div>
-      <div class="fname">reel-menu-invierno.mp4&nbsp; · &nbsp;1920×1080 · 48 MB</div>
+<div class="win">
+  <div class="bar"><div class="dt"></div><div class="dt"></div><div class="dt"></div>
+    <div class="crumb">Disparador &nbsp;/&nbsp; <b>Lanzamiento · menú de invierno</b></div></div>
+  <div class="app">
+    <div class="side">
+      <div class="mark"><div class="logo">D</div><span>Disparador</span></div>
+      <div class="grp">PUBLICAR</div>
+      <div class="nav on"><svg viewBox="0 0 24 24"><path d="M3 11.5L21 3l-8.5 18-2-7.5-7.5-2z"/></svg>Disparar</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="16" rx="2.4"/><path d="M3.5 9.5h17M8.5 2.5v4M15.5 2.5v4"/></svg>Programadas</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Biblioteca</div>
+      <div class="grp">CUENTAS</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5S14.4 18.4 12 20.5c-2.4-2.1-3.6-5.4-3.6-8.5S9.6 6.1 12 3.5z"/></svg>Redes</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-6M21 19H3"/></svg>Métricas</div>
+      <div class="pie"><div class="av">FT</div><div>FindTek<br><small>7 cuentas conectadas</small></div></div>
     </div>
-    <div class="lbl">Copy</div>
-    <div class="copy">
-      <p>Llegó el menú de invierno. Sopa paraguaya recién horneada, guiso de
-      carne a fuego lento y chocolate caliente. De lunes a sábado, desde las 18 h…</p>
-      <div class="count"><span>1.482 caracteres</span><span>se recorta por red</span></div>
-    </div>
-  </div>
-  <div class="col-r">
-    <div class="lbl">Variantes derivadas</div>
-    <div class="rows">
-      <div class="row"><div class="ic">IG</div><div class="nm">Instagram Reels</div>
-        <div class="spec">9:16 · 1080×1920 · máx 90 s</div><div class="chip wn">recorta a 90 s</div></div>
-      <div class="row"><div class="ic">TT</div><div class="nm">TikTok</div>
-        <div class="spec">9:16 · 1080×1920 · máx 10 min</div><div class="chip ok">listo</div></div>
-      <div class="row"><div class="ic">YT</div><div class="nm">YouTube Shorts</div>
-        <div class="spec">9:16 · 1080×1920 · máx 60 s</div><div class="chip wn">recorta a 60 s</div></div>
-      <div class="row"><div class="ic">FB</div><div class="nm">Facebook</div>
-        <div class="spec">4:5 · 1080×1350 · caption 63.206</div><div class="chip ok">listo</div></div>
-      <div class="row"><div class="ic">in</div><div class="nm">LinkedIn</div>
-        <div class="spec">1:1 · 1080×1080 · caption 3.000</div><div class="chip ok">listo</div></div>
-      <div class="row"><div class="ic">TH</div><div class="nm">Threads</div>
-        <div class="spec">9:16 · 1080×1920 · caption 500</div><div class="chip wn">copy a 500</div></div>
-      <div class="row"><div class="ic">PT</div><div class="nm">Pinterest</div>
-        <div class="spec">2:3 · 1000×1500 · caption 500</div><div class="chip wn">copy a 500</div></div>
-    </div>
-    <div class="foot">
-      <div class="btn">Publicar en 7 destinos</div>
-      <div class="note">El original dura 1:35. Ninguna red lo rechaza:<br>el sistema deriva la variante que cada una acepta.</div>
+    <div class="main">
+      <div class="head"><div><div class="h1">Un asset, siete destinos</div>
+        <div class="sub">El original dura 1:35 · ninguna red lo rechaza</div></div>
+        <div class="btn">Publicar en 7 destinos</div></div>
+      <div class="dos">
+        <div class="izq">
+          <div class="card" style="padding:12px">
+            <div class="thumb"><div class="play"></div><div class="dur">1:35</div></div>
+            <div class="meta">reel-menu-invierno.mp4 · 1920×1080 · 48 MB</div>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <div class="cp"><p>Llegó el menú de invierno. Sopa paraguaya recién horneada,
+              guiso de carne a fuego lento y chocolate caliente…</p>
+              <div class="cpf"><span>1.482 caracteres</span><span>se recorta por red</span></div></div>
+          </div>
+        </div>
+        <div class="der">
+          <div class="card">
+            <div class="ch"><b>Variantes derivadas</b><span>generadas con FFmpeg</span></div>
+            <div class="hd2"><div>RED</div><div>VARIANTE</div><div class="st">AJUSTE</div></div>
+            <div class="rw2"><div class="red"><div class="rl">IG</div>Instagram Reels</div>
+              <div class="mut">9:16 · 1080×1920 · máx 90 s</div>
+              <div class="st"><span class="p p-wn">recorta a 90 s</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">TT</div>TikTok</div>
+              <div class="mut">9:16 · 1080×1920 · máx 10 min</div>
+              <div class="st"><span class="p p-ok">listo</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">YT</div>YouTube Shorts</div>
+              <div class="mut">9:16 · 1080×1920 · máx 60 s</div>
+              <div class="st"><span class="p p-wn">recorta a 60 s</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">FB</div>Facebook</div>
+              <div class="mut">4:5 · 1080×1350 · caption 63.206</div>
+              <div class="st"><span class="p p-ok">listo</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">in</div>LinkedIn</div>
+              <div class="mut">1:1 · 1080×1080 · caption 3.000</div>
+              <div class="st"><span class="p p-ok">listo</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">TH</div>Threads</div>
+              <div class="mut">9:16 · 1080×1920 · caption 500</div>
+              <div class="st"><span class="p p-wn">copy a 500</span></div></div>
+            <div class="rw2"><div class="red"><div class="rl">PT</div>Pinterest</div>
+              <div class="mut">2:3 · 1000×1500 · caption 500</div>
+              <div class="st"><span class="p p-wn">copy a 500</span></div></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
